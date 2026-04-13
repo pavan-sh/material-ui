@@ -104,6 +104,7 @@ const TreeItem = styled(MuiTreeItem)(({ theme }) => ({
   [`& .${treeItemClasses.content}`]: {
     padding: 4,
     borderRadius: 8,
+    userSelect: 'text',
     '&:hover': {
       backgroundColor: alpha(blueDark[600], 0.2),
     },
@@ -116,6 +117,7 @@ const TreeItem = styled(MuiTreeItem)(({ theme }) => ({
     [`& .${treeItemClasses.label}`]: {
       fontFamily: 'Menlo, Consolas, Droid Sans Mono, monospace',
       fontSize: theme.typography.pxToRem(13),
+      userSelect: 'text',
     },
   },
 }));
